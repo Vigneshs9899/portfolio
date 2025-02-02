@@ -59,7 +59,7 @@ const Header = () => {
               transition={{ duration:0.6, delay:1.2 }}
           
             
-            href="https://drive.google.com/file/d/1LKt79w43Rj57_KrGGcUA2IUSlCONgk3-/view?usp=sharing" download className='px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2 bg-white dark:text-black'>My resume <Image src={assets.download_icon} alt='' className='w-4'/></motion.a>
+            href="https://drive.google.com/file/d/1u6237LMI09bdq3RJZXPPaVtFumv1flf6/view?usp=sharing" download className='px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2 bg-white dark:text-black'>My resume <Image src={assets.download_icon} alt='' className='w-4'/></motion.a>
         </div>
 
     </div>
