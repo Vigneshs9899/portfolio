@@ -185,7 +185,7 @@ export const serviceData = [
     { icon: assets.web_icon, title: 'E-Commerce Website (MERN Stack)', description: 'Built a full-stack e-commerce platform with product browsing, cart, and admin dashboard.', link: 'https://ecommerce-app-frontend-gamma-seven.vercel.app/' },
     { icon: assets.web_icon, title: 'Doctor Appointment Platform (MERN, Tailwind CSS)', description: 'Developed a responsive appointment booking platform with real-time scheduling and interactive UI elements.', link: 'https://prescripto-frontend-silk.vercel.app/' },
     { icon: assets.web_icon, title: 'Real Estate Landing Page (React.js, Tailwind CSS)', description: 'Developed a modern, responsive landing page for real estate, showcasing properties and contact features.', link: 'https://vigneshs9899.github.io/real_estate/' },
-    { icon: assets.web_icon, title: 'Dynamic Portfolio Website (Next.js, Framer Motion)', description: 'Created a personal portfolio website with dynamic animations using Framer Motion library.', link: 'https://portfolio-vigneshs-projects-2379e2bb.vercel.app/' },
+    { icon: assets.web_icon, title: 'Food Delivery System (MERN Stack)', description: 'Built a full-stack food delivery platform using MERN.', link: 'https://tomato-frontend-9bhd.onrender.com/' },
 ]
 
 export const infoList = [
