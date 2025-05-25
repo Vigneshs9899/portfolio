@@ -19,6 +19,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="scroll-smooth">
+    <head>
+      <meta name="author" content="vignesh">
+      <meta name="description" content="vignesh – a Frontend Developer specializing in React, Tailwind CSS, and modern web apps." />
+      <meta name="robots" content="index, follow" />
+    </head>
       <body
         className={`${outfit.className} ${ovo.className} antialiased leading-8 overflow-x-hidden dark:bg-darkTheme dark:text-white`}
       >
