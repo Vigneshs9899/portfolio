@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className="scroll-smooth">
     <head>
-      <meta name="keyword" content="vignesh,developer,websitedeveloper,vigneshdeveloper,website,vigneshprofile">
+      <meta name="keyword" content="vignesh,developer,websitedeveloper,vigneshdeveloper,website,vigneshprofile"/>
       <meta name="author" content="vignesh"/>
       <meta name="description" content="vignesh – a Frontend Developer specializing in React, Tailwind CSS, and modern web apps." />
       <meta name="robots" content="index, follow" />
