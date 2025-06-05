@@ -39,7 +39,7 @@ const Header = () => {
           transition={{ duration:0.6, delay:0.7 }}
         
         className='max-w-2xl mx-auto font-Ovo'>
-            A passionate developer skilled in HTML, CSS, JavaScript, and React.js, with experience building 10+ responsive websites and optimizing UI/UX for seamless user experiences. Let’s create something amazing together!
+            A passionate developer skilled in web development. I love crafting clean, responsive websites that elevate user experience. Let’s create something great together!
         </motion.p>
 
         <div className='flex flex-col sm:flex-row items-center gap-4 mt-4'>
