@@ -1,105 +1,44 @@
-import { assets, workData } from '@/assets/assets';
-import Image from 'next/image';
+// app/work.jsx
 import React, { useState } from 'react';
-import { motion, AnimatePresence } from "framer-motion";
+import { HoverEffect } from '@/components/ui/card-hover-effect';
+import { workData } from '@/assets/assets';
+import { motion } from "motion/react";
 
-const Work = ({ isDarkMode }) => {
-  const [visibleProjects, setVisibleProjects] = useState(4); // Initially show 4 projects
-  const [isExpanded, setIsExpanded] = useState(false); // Track if "Show more" is clicked
+const Work = () => {
+  const [visible, setVisible] = useState(3);
+  const [expanded, setExpanded] = useState(false);
 
-  const handleShowMore = () => {
-    if (isExpanded) {
-      // If already expanded, show only 4 projects
-      setVisibleProjects(4);
-    } else {
-      // If not expanded, show all projects
-      setVisibleProjects(workData.length);
-    }
-    setIsExpanded(!isExpanded); // Toggle the expanded state
+  const handleToggle = () => {
+    setVisible(expanded ? 3 : workData.length);
+    setExpanded(!expanded);
   };
 
+  const items = workData.slice(0, visible).map((project) => ({
+    title: project.title,
+    description: project.description,
+    link: project.link,
+    image: project.bgImage,
+  }));
+
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      transition={{ duration: 1 }}
-      id='work'
-      className='w-full px-[12%] py-10 scroll-mt-20'
-    >
-      <motion.h4
-        initial={{ y: -20, opacity: 0 }}
-        whileInView={{ y: 0, opacity: 1 }}
-        transition={{ delay: 0.3, duration: 0.5 }}
-        className='text-center mb-2 text-lg font-Ovo'
-      >
-        Turning Ideas into Reality
-      </motion.h4>
-
-      <motion.h2
-        initial={{ y: -20, opacity: 0 }}
-        whileInView={{ y: 0, opacity: 1 }}
-        transition={{ delay: 0.5, duration: 0.5 }}
-        className='text-center text-5xl font-Ovo'
-      >
-        My Works
-      </motion.h2>
-
-      <motion.p
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ delay: 0.7, duration: 0.5 }}
-        className='text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo'
-      >
-        Explore a selection of projects I contributed to during my time at work, showcasing my skills, expertise, and the impactful solutions I delivered.
-      </motion.p>
-
-      <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ delay: 0.9, duration: 0.6 }}
-        className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5 dark:text-black'
-      >
-        {/* Render all visible projects in the same grid */}
-        {workData.slice(0, visibleProjects).map((project, index) => (
-          <motion.div
-            key={index}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: index * 0.1 }}
-            whileHover={{ scale: 1.05 }}
-            className='aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group'
-            style={{ backgroundImage: `url(${project.bgImage})` }}
-          >
-            <div className='bg-black w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7'>
-              <div>
-                <h2 className='font-semibold text-white'>{project.title}</h2>
-                <p className='text-sm text-white'>{project.description}</p>
-              </div>
-              <div className='border rounded-full bg-white w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition'>
-                <a href={project.link}><Image src={assets.send_icon} alt='send icon' className='w-5' /></a>
-              </div>
-            </div>
-          </motion.div>
-        ))}
-      </motion.div>
-
+    <section id="work" className="w-full px-[12%] py-10 scroll-mt-20">
+      <h4 className="text-center mb-2 text-lg font-sans text-accent">Real Projects, Real Impact</h4>
+      <h2 className="text-center text-5xl font-sans text-heading">My Works</h2>
+      <p className="text-center max-w-2xl mx-auto mt-5 mb-12 font-sans text-textPrimary">
+        A peek at some of the things I’ve shipped while working on real teams and products.
+      </p>
+      <HoverEffect items={items} />
       {workData.length > 4 && (
-        <motion.a
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ delay: 1.1, duration: 0.5 }}
-          className='w-max flex items-center justify-center gap-2 text-gray-700 border-[0.5px] border-gray-700 rounded-full py-3 px-10 mx-auto my-20 hover:bg-lightHover duration-500 dark:text-white dark:border-white dark:hover:bg-darkHover'
-          onClick={handleShowMore}
+        <motion.button
+          whileHover={{ scale: 1.05 }}
+          transition={{ duration: 0.3 }}
+          onClick={handleToggle}
+          className="cursor-pointer w-max flex items-center justify-center gap-2 border border-border rounded-full py-3 px-10 mx-auto mt-10 duration-500 font-sans text-textPrimary bg-accent hover:bg-accentHover"
         >
-          {isExpanded ? 'Show less' : 'Show more'}{' '}
-          <Image
-            src={isDarkMode ? assets.right_arrow_bold_dark : assets.right_arrow_bold}
-            alt='right arrow'
-            className='w-4'
-          />
-        </motion.a>
+          {expanded ? 'Show Less' : 'Show More'}
+        </motion.button>
       )}
-    </motion.div>
+    </section>
   );
 };
 

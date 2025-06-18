@@ -79,107 +79,107 @@ export const assets = {
 export const workData = [
     {
         title: 'Company site',
-        description: 'Web Design',
-        bgImage: '/work-1.png',
+        description: 'A professional corporate website for Santhanam Packaging, emphasizing product clarity and streamlined navigation for B2B engagement.',
+        bgImage: '/sppl.png',
         link:'https://santhanampackagings.com/',
     },
     {
         title: 'Rice & Millet site',
-        description: 'Web Design',
-        bgImage: '/work-2.png',
+        description: 'A clean and earthy design for NPS India, highlighting the purity and health benefits of their millet and rice products.',
+        bgImage: '/nps.png',
         link: 'https://npsindia.in/',
     },
     {
         title: 'Sweetshop site',
-        description: 'Web Design',
-        bgImage: '/work-3.png',
+        description: 'A vibrant and festive design for Bharathi Products, showcasing traditional sweets with an inviting product layout.',
+        bgImage: '/bharathi.png',
         link: 'https://bharathiproducts.com/',
     },
     {
         title: 'Gadgets site',
-        description: 'Web Design',
-        bgImage: '/work-4.png',
+        description: 'A sleek and tech-forward interface for ClouDetail, tailored for showcasing smart devices and driving customer conversions.',
+        bgImage: '/cloudetail.png',
         link:'https://cloudetail.in/',
     },
     {
         title: 'Company site',
-        description: 'Web Design',
-        bgImage: '/work-5.png',
+        description: 'A modern and minimal corporate website for CloudHawk, presenting their business solutions with clarity and confidence.',
+        bgImage: '/cloudhawk.png',
         link:'https://cloudhawk.in/',
     },
     {
         title: 'Toys site',
-        description: 'Web Design',
-        bgImage: '/work-6.png',
+        description: 'A playful, colorful ecommerce site for Seykart, designed to attract kids and parents with smooth browsing and engaging visuals.',
+        bgImage: '/seykart.png',
         link:'https://seykart.com/',
     },
     {
         title: 'Company site',
-        description: 'Web Design',
-        bgImage: '/work-7.png',
+        description: 'A bold and futuristic design for Treknix, reflecting innovation and technical excellence for their IT services.',
+        bgImage: '/treknix.png',
         link:'https://treknix.in/',
     },
     {
         title: 'NGO site',
-        description: 'Web Design',
-        bgImage: '/work-8.png',
+        description: 'A heartfelt and inspiring site for Udavum Ullangal, focusing on storytelling and impact to support charitable causes.',
+        bgImage: '/charity.png',
         link:'https://udavumullangal.com/',
     },
     {
         title: 'Architecture site',
-        description: 'Web Design',
-        bgImage: '/work-9.png',
+        description: 'A minimal and elegant portfolio for VY Architecture Studio, combining modern design with stunning visual showcases of their work.',
+        bgImage: '/vy.png',
         link:'https://vyarchitecturestudio.com/',
     },
     {
         title: 'Boutique site',
-        description: 'Web Design',
-        bgImage: '/work-10.png',
+        description: 'A classy and fashionable website for Miss Classy Boutique, with an emphasis on visual style and easy catalog browsing.',
+        bgImage: '/textile.png',
         link:'https://missclassy.in/',
     },
     {
         title: 'Travel Agency site',
-        description: 'Web Design',
-        bgImage: '/work-11.png',
+        description: 'A user-friendly and vibrant site for Royal Aditi Travels, making trip planning seamless with informative service pages and CTAs.',
+        bgImage: '/taxi.png',
         link:'https://royaladiti.com/',
     },
     {
         title: 'Giftshop site',
-        description: 'Web Design',
-        bgImage: '/work-12.png',
+        description: 'A creative and cozy storefront for Photomemoriezz, built to highlight customized gifts with engaging visuals and user flow.',
+        bgImage: '/giftshop.png',
         link:'https://photomemoriezz.com/',
     },
     {
         title: 'Company site',
-        description: 'Web Design',
-        bgImage: '/work-13.png',
+        description: 'A finance-focused site for Loan Brands, designed for trust-building and ease of lead capture in the lending domain.',
+        bgImage: '/loan.png',
         link:'https://loanbrands.co.in/',
     },
     {
         title: 'Restaurant site',
-        description: 'Web Design',
-        bgImage: '/work-14.png',
+        description: 'A modern dining experience site for Uptown Asia, combining sleek visuals with a strong culinary theme and reservation focus.',
+        bgImage: '/uptownasia.png',
         link:'https://uptownasia.in/',
     },
     {
         title: 'Restaurant site',
-        description: 'Web Design',
-        bgImage: '/work-15.png',
+        description: 'A bold and urban web presence for Max Between Breads, featuring high-impact imagery and a menu-driven layout.',
+        bgImage: '/max.png',
         link:'https://maxbetweenbreads.com/',
     },
     {
         title: 'Hospital site',
-        description: 'Web Design',
-        bgImage: '/work-16.png',
+        description: 'A clean and accessible medical site for Sri DKK Hospital, focused on trust, service clarity, and easy patient navigation.',
+        bgImage: '/dkk.png',
         link:'https://sridkkhospital.com/',
     },
     {
         title: 'Ricemill site',
-        description: 'Web Design',
-        bgImage: '/work-17.png',
+        description: 'A grounded, product-centered site for Sivaram Modern Rice Mill, showcasing their processing excellence and agricultural legacy.',
+        bgImage: '/ricemill.png',
         link:'https://sivarammodernricemill.com/',
     },
-]
+];
 
 export const serviceData = [
     { icon: assets.web_icon, title: 'E-Commerce Website (MERN Stack)', description: 'Built a full-stack e-commerce platform with product browsing, cart, and admin dashboard.', link: 'https://ecommerce-app-frontend-gamma-seven.vercel.app/' },
@@ -196,4 +196,64 @@ export const infoList = [
 
 export const toolsData = [
     assets.vscode, assets.mongodb,assets.ai, assets.wordpress, assets.figma, assets.git
+];
+
+// /assets/assets.js
+export const projectsData = [
+  {
+    image: '/project1_screenshot.png',
+    quote: "Built a full-stack e-commerce platform with product browsing, cart, and admin dashboard.",
+    name: "E-Commerce Website",
+    title: "MERN • Tailwind",
+    link:'https://ecommerce-app-frontend-gamma-seven.vercel.app/'
+  },
+  {
+    image: '/project2_screenshot.png',
+    quote: "Developed a responsive appointment booking platform with real-time scheduling and interactive UI elements.",
+    name: "Doctor Appointment Platform",
+    title: "MERN • Tailwind",
+    link:'https://prescripto-frontend-silk.vercel.app/'
+  },
+  {
+    image: '/project3_screenshot.png',
+    quote: "Built a full-stack food delivery platform using MERN.",
+    name: "Food Delivery Platform",
+    title: "MERN • Tailwind",
+    link:'https://tomato-frontend-9bhd.onrender.com/'
+  },
+  {
+    image: '/project4_screenshot.png',
+    quote: "Developed a modern, responsive landing page for real estate, showcasing properties and contact features.",
+    name: "Real Estate Landing Page",
+    title: "React.js • Tailwind",
+    link:'https://vigneshs9899.github.io/real_estate/'
+  },
+  {
+    image: '/project5_screenshot.png',
+    quote: "Developed a modern, responsive landing page for men's salon, showcasing services and contact details.",
+    name: "Salon Landing Page",
+    title: "HTML • Bootstrap CSS • JS",
+    link: 'https://vigneshs9899.github.io/mens-salon-site/'
+  },
+  {
+    image: '/project6_screenshot.png',
+    quote: "Developed a modern, responsive landing page for car company, showcasing services and features.",
+    name: "Car Landing Page",
+    title: "React.js • Tailwind CSS",
+    link: 'https://vigneshs9899.github.io/react_landingpage/'
+  },
+  {
+    image: '/project7_screenshot.png',
+    quote: "Developed a modern, responsive landing page for corporate company, showcasing services and features.",
+    name: "Corporate Landing Page",
+    title: "HTML • CSS • JS",
+    link: 'https://vigneshs9899.github.io/company_website/'
+  },
+  {
+    image: '/project8_screenshot.png',
+    quote: "Developed a end to end report of risk analysis in banking domain.",
+    name: "Risk Analytics Report",
+    title: "Power BI • SQL • Python",
+  },
+  // …add all 5–7 of your mock builds here
 ];

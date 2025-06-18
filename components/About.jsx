@@ -18,7 +18,7 @@ const About = ({isDarkMode}) => {
             whileInView={{opacity:1, y:0}}
             transition={{duration:0.5, delay:0.3}} 
         
-             className='text-center mb-2 text-lg font-Ovo'>Introduction</motion.h4>
+             className='text-center mb-2 text-lg font-sans'>Introduction</motion.h4>
 
 
         <motion.h2
@@ -26,7 +26,7 @@ const About = ({isDarkMode}) => {
             whileInView={{opacity:1, y:0}}
             transition={{duration:0.5, delay:0.5}}
 
-             className='text-center text-5xl font-Ovo'>About me</motion.h2>
+             className='text-center text-5xl font-sans'>About me</motion.h2>
 
 
         <motion.div 
@@ -58,7 +58,7 @@ const About = ({isDarkMode}) => {
                 transition={{duration:0.6, delay:0.8}}
             
                     className='flex-1'>
-                <p className='mb-10 max-w-2xl font-Ovo'>I’m dedicated to creating solutions that not only look great but also deliver exceptional user experiences.</p>
+                <p className='mb-10 max-w-2xl font-sans'>I’m dedicated to creating solutions that not only look great but also deliver exceptional user experiences.</p>
             
                 <motion.ul
 
@@ -93,7 +93,7 @@ const About = ({isDarkMode}) => {
                     transition={{duration:0.5, delay:1.3}}
 
 
-                      className='my-6 text-gray-700 font-Ovo dark:text-white/80'>Tools I use</motion.h4>
+                      className='my-6 text-gray-700 font-sans dark:text-white/80'>Tools I use</motion.h4>
                 
                 <motion.ul
 
