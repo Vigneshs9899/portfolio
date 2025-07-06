@@ -7,18 +7,7 @@ const Header = () => {
   return (
     <div className='w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4'>
 
-        <motion.div 
-          whileHover={{ scale: 1.05 }}
-          initial={{ scale:0}}
-          whileInView={{ scale:1 }}
-          transition={{ duration:0.8, type:'sping', stiffness:100 }}
         
-        >
-            <Image
-            whileHover={{ scale: 1.05 }}
-            transition={{ duration: 0.3 }}
-            src={assets.profile_img} alt='' className='rounded-full w-32 border-[3px] border-accent hover:border-none'/>
-        </motion.div>
 
         <motion.h3
           initial={{ y:-20, opacity:0}}
