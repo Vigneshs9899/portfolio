@@ -113,7 +113,7 @@ const Contact = () => {
           type='submit'
         >
           Submit now
-          <Image src={assets.right_arrow_white} alt='' className='w-4' />
+         
         </motion.button>
 
         <motion.p className='mt-4 text-center text-green-400'>{result}</motion.p>
