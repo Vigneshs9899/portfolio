@@ -53,7 +53,7 @@ const Header = () => {
               transition={{ duration:0.3 }}
           
             
-            href="https://drive.google.com/file/d/112QTfD_pex9ShnJMQuP_e0gmICUVqspg/view?usp=sharing" download className='font-sans px-10 py-3 border rounded-full border-border flex items-center gap-2 bg-accent dark:text-textPrimary hover:bg-accentHover'>Download My resume </motion.a>
+            href="https://drive.google.com/file/d/1BEudOOY7xVs--3PudU95CwOZ8c31nX3Q/view?usp=sharing" download className='font-sans px-10 py-3 border rounded-full border-border flex items-center gap-2 bg-accent dark:text-textPrimary hover:bg-accentHover'>Download My resume </motion.a>
         </div>
 
     </div>
